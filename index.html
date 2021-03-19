@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>VideoMaker</title>
+    <title>Video Controls</title>
 
 </head>
 
@@ -15,7 +15,7 @@
             <video id= 'meuVideo' src="Warriors - Season 2020 Cinematic - League of Legends (ft. 2WEI and Edda Hayes).webm" 
             autoplay loop onclick="clicarVideo()"></video>
 
-            <div class="botoes">
+            <div id="botoes">
                 <button onclick="play()" class="buttons">Play</button>
                 <button onclick="pause()" class="buttons">Pause</button>
                 <button onclick="voltar()" class="buttons">Voltar</button>
@@ -28,17 +28,5 @@
         </div>
 
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-
-        $(document).ready(function(){
-            $('.botoes').css('display','none')
-            $("#meuVideo").hover(function(){
-                $('.botoes').toggle(1000)
-            })
-        })
-
-    </script>
 </body>
 </html>

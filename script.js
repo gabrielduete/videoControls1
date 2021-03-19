@@ -1,6 +1,19 @@
-var video = document.getElementById('meuVideo')
+let video = document.getElementById('meuVideo')
+let botoes = document.getElementById('botoes')
+let container = document.getElementById('container')
 let clicou = false
 let mutou = true
+botoes.style.display = 'none'
+
+container.onmouseover = function(){
+    video.style.filter = 'opacity(42%)'
+    botoes.style.display = 'initial'
+}
+
+container.onmouseout = function(){
+    video.style.filter = 'opacity(100%)'
+    botoes.style.display = 'none'
+}
 
 function clicarVideo(){
     if (clicou == false){
