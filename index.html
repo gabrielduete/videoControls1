@@ -5,27 +5,32 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>Video Controls</title>
 
 </head>
 
 <body>
+    <section>
         <div id="container">
             
             <video id= 'meuVideo' src="Warriors - Season 2020 Cinematic - League of Legends (ft. 2WEI and Edda Hayes).webm" 
             autoplay loop onclick="clicarVideo()"></video>
 
             <div id="botoes">
-                <button onclick="play()" class="buttons">Play</button>
-                <button onclick="pause()" class="buttons">Pause</button>
-                <button onclick="voltar()" class="buttons">Voltar</button>
-                <button onclick="mais()" class="buttons">+ Speed</button>
-                <button onclick="menos()" class="buttons">- Speed</button>
-                <button onclick="mais10()" class="buttons">+10SEC</button>
-                <button onclick="menos10()" class="buttons">-10SEC</button>
-                <button onclick="mutado()" class="buttons">Mute</button>
+                <i id='botaoPlay' class="fas fa-play fa-lg" onclick="play()" style="display: none;"></i>
+                <i id= 'botaoPause' class="fas fa-pause fa-lg" onclick="pause()"></i>
+                <i class="fas fa-undo-alt fa-lg" onclick="voltar()"></i>
+                <!-- <i class="fas fa-angle-double-right" onclick='mais()'></i>
+                <i class="fas fa-angle-double-left" onclick="menos()"></i> -->
+                <i class="fas fa-forward fa-lg" onclick="mais10()"></i>
+                <i class="fas fa-backward fa-lg" onclick="menos10()"></i>
+                <i id= 'somFalse' class="fas fa-volume-up fa-lg" onclick="mutado()"></i>
+                <i id='somTrue' class="fas fa-volume-mute fa-lg" onclick="mutado()" style="display: none;"></i>
+
             </div>
         </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

@@ -1,4 +1,8 @@
 let video = document.getElementById('meuVideo')
+let botaoPlay = document.getElementById('botaoPlay')
+let botaoPause = document.getElementById('botaoPause')
+let somTrue = document.getElementById('somTrue')
+let somFalse = document.getElementById('somFalse')
 let botoes = document.getElementById('botoes')
 let container = document.getElementById('container')
 let clicou = false
@@ -6,7 +10,7 @@ let mutou = true
 botoes.style.display = 'none'
 
 container.onmouseover = function(){
-    video.style.filter = 'opacity(42%)'
+    video.style.filter = 'opacity(60%)'
     botoes.style.display = 'initial'
 }
 
@@ -27,10 +31,14 @@ function clicarVideo(){
 
 function play(){
     video.play()
+    botaoPause.style.display = 'initial'
+    botaoPlay.style.display = 'none'
 }
 
 function pause(){
     video.pause()
+    botaoPlay.style.display = 'initial'
+    botaoPause.style.display = 'none'
 }
 
 function voltar(){
@@ -59,8 +67,12 @@ function mutado(){
     if (mutou == true){
         video.muted = true
         mutou = false
+        somTrue.style.display = 'initial'
+        somFalse.style.display = 'none'
     }else{
         video.muted = false
         mutou = true
+        somTrue.style.display = 'none'
+        somFalse.style.display = 'initial'
     }
 }

@@ -1,7 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgba(2, 2, 2, 0.837);
+    /* background-color: rgba(255, 255, 255, 0.618); */
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(7, 0, 0), #b80808);
+    position: relative;
+    background-size: 400%, 400%;
+
 }
 
 #container{
@@ -24,24 +33,16 @@ body{
 }
 
 #botoes{
-    /* margin-left: 100px; */
+    margin-left: 200px;
     bottom: 20px;
     position: absolute;
-} 
+}
 
-button{
-    cursor: pointer;
-    font-size: 17px;
-    font-family: monospace;
-    width: 80px;
-    height: 35px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    background:  rgba(255, 0, 0, 0.727);
-    color: rgb(255, 255, 255);
-    transition-property: background-color;
-    transition-duration: 0.90s;
+i{  
+    opacity: 70%;
+    padding: 23px;
+    color: white;
+    text-shadow: 3px 5px 2px black;
 }
 
 button:hover{
