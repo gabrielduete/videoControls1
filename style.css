@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    /* background-color: rgba(255, 255, 255, 0.618); */
 }
 
 section{
@@ -10,7 +9,6 @@ section{
     background: linear-gradient(to right, rgb(7, 0, 0), #b80808);
     position: relative;
     background-size: 400%, 400%;
-
 }
 
 #container{
@@ -33,6 +31,7 @@ section{
 }
 
 #botoes{
+    position: absolute;
     margin-left: 200px;
     bottom: 20px;
     position: absolute;
@@ -43,8 +42,28 @@ i{
     padding: 23px;
     color: white;
     text-shadow: 3px 5px 2px black;
+    outline: none;
+    transform-style: preserve-3d;
 }
 
-button:hover{
-    background-color: rgb(4, 4, 4);
+i::after{
+    top: -100%;
+    left: 0px;
+    width: 100%;
+        
+}
+
+#progresso{
+    border: 2px solid rgb(255, 0, 34);
+    background-color: #ffffff;
+    height: 10px;
+    width: 205px;
+    margin-top: -90px;
+    margin-left: 280px;
+}
+
+#barraProgresso{
+    background-color:#b80808;
+    height: 10px;
+    width: 0px;
 }

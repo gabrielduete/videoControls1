@@ -14,17 +14,21 @@
     <section>
         <div id="container">
             
-            <video id= 'meuVideo' src="Warriors - Season 2020 Cinematic - League of Legends (ft. 2WEI and Edda Hayes).webm" 
-            autoplay loop onclick="clicarVideo()"></video>
-
+            <video id='meuVideo' src="Awaken (ft. Valerie Broussard) _ Season 2019 Cinematic - League of Legends.mp4" loop onclick="clicarVideo()"></video>
+            
+            <div id="progresso">
+                <div id="barraProgresso"></div>
+            </div>
+            
             <div id="botoes">
-                <i id='botaoPlay' class="fas fa-play fa-lg" onclick="play()" style="display: none;"></i>
-                <i id= 'botaoPause' class="fas fa-pause fa-lg" onclick="pause()"></i>
-                <i class="fas fa-undo-alt fa-lg" onclick="voltar()"></i>
-                <!-- <i class="fas fa-angle-double-right" onclick='mais()'></i>
-                <i class="fas fa-angle-double-left" onclick="menos()"></i> -->
-                <i class="fas fa-forward fa-lg" onclick="mais10()"></i>
-                <i class="fas fa-backward fa-lg" onclick="menos10()"></i>
+
+                <i id='botaoPlay' class="fas fa-play fa-lg" onclick="play()"></i>
+                <i id= 'botaoPause' class="fas fa-pause fa-lg" style="display: none;" onclick="pause()"></i>
+                
+                <i class="fas fa-undo-alt fa-lg" class='animado' onclick="voltar()"></i>
+                <i class="fas fa-forward fa-lg" class='animado' onclick="mais10()"></i>
+                <i class="fas fa-backward fa-lg" class='animado' onclick="menos10()"></i>
+
                 <i id= 'somFalse' class="fas fa-volume-up fa-lg" onclick="mutado()"></i>
                 <i id='somTrue' class="fas fa-volume-mute fa-lg" onclick="mutado()" style="display: none;"></i>
 
