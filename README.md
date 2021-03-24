@@ -2,7 +2,7 @@
     Video Controls
 </h1>
 
-# ✨ Previw
+# ✨ Preview
 <h2>
     <img src='screen1.png'>
     <img src='screen2.png'>
