@@ -43,14 +43,10 @@ i{
     color: white;
     text-shadow: 3px 5px 2px black;
     outline: none;
-    transform-style: preserve-3d;
 }
 
-i::after{
-    top: -100%;
-    left: 0px;
-    width: 100%;
-        
+i:active{
+    color: #b80808;
 }
 
 #progresso{
@@ -63,7 +59,7 @@ i::after{
 }
 
 #barraProgresso{
-    background-color:#b80808;
+    background-color:#f50303;
     height: 10px;
     width: 0px;
 }
